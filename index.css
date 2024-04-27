@@ -3,11 +3,13 @@
     padding-left: 38px;
     padding-bottom: 0;
     font-size: 20px;
-
+    /* decided to add some animation for fun */
     animation-name: blinkinganimation;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: 0;
+    
+    /* created a blinking animation, spans over 4 secs
+    goes from 0 - 100%  see @keyframes vvv */
 }
 
 
@@ -34,12 +36,15 @@ section {
     border: 3px dotted orange;
     padding: 16px;
     background-color: rgb(173, 216, 230, 10%);
-
+    /* added a grow to right animation */
     animation-name: boxAnimation;
     animation-duration: 3s;
     animation-fill-mode: forwards; 
     animation-timing-function: ease-in-out;   
-
+    /* made the duration last 3 secs. timed to work 
+    with other animation nicely, animation runs from 0 - 100%
+    with a ease in and out feature that smooths the movement
+    slow, normal, slow */
 }
 
 
@@ -55,6 +60,7 @@ section {
     border-right: 1px solid rgb(251, 202, 112);
     padding-right: 10px;
     padding-left: 10px;
+    /* spaced links apart, for better visibility and separated */
     
     
 }
@@ -64,7 +70,8 @@ ul {
     border-top: 1px solid rgb(251, 202, 112);
     border-bottom: 1px solid rgb(251, 202, 112);
     padding: 10px 10px; 
-    /* added padding to separate the links */
+    /* added padding to add space to dividing lines to encase the 
+    nav bar */
 }
 
 body {
@@ -81,7 +88,9 @@ body {
     color: rgb(239, 225, 189);
     text-shadow: 0 2px 6px rgb(178, 192, 196);
     text-decoration: underline;
-    /* gave hover graphics for fun */
+    /* gave hover graphics for fun with a shadow
+    increased fot weight and color for clear visibility
+    gives effect of pushing into the page */
 }
 
 h1, h2{
@@ -95,26 +104,27 @@ footer {
     attach the footer to the bottom of the page */
 }
 @keyframes boxAnimation {
-    0% {
-      margin: 24px 0; 
+    0% {      
       border: 1px solid orange;
       width: 50%;
-      padding: 16px;
     }
 
-    90% {
-      padding: 16px;
-      margin: 24px 0;
+    90% {           
       border: 1px solid orange;  
     }
     100% {
-        width: 100%;
-        margin: 24px 0; 
-        border: 3px dotted orange;
-        padding: 16px;
+        width: 100%;        
+        border: 3px dotted orange;        
         background-color: rgb(173, 216, 230, 10%);
     }
 }
+/* key frames from my growing to the right. made a thin solid line
+for the section portion borders. kept the height. I made the width start
+at a large enough point to not move the boxes do to font sizes
+(50%) increased width to full expected size to the right. pushed off
+the transition from border size to 90% to give the appearance of the boxes
+growing
+ */
 
 @keyframes blinkinganimation {
     0% {
@@ -136,4 +146,15 @@ footer {
       opacity: .85;
     }
   }
+
+/* increased opacity over 3 seconds timed with box animation
+increased direction, distance of shadow while lowering blur effect
+of shadow ending text shadow at 75% and full opacity to be after 
+sequence to keep in time with other animation and giving a
+ghostly appearance of a misty spirit being sucked back into the name,
+bring the name to life*/
+
+/* this was me having a little fun, while keeping the instructions
+to the assignment, and adding to what I had to work with. 
+didn't want to spend too much time on it so only did a couple things.*/
 /* almost changed the whole thing */
