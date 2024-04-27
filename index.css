@@ -137,30 +137,3 @@ footer {
     }
   }
 /* almost changed the whole thing */
-/* @keyframes boxAnimation {
-    0% {
-      border: 3px solid red;
-    }
-    25% {
-      width: 100%;
-    }
-    50% {
-      background-color: red;
-      height: 200px;
-    }
-    100% {
-      border: 3px solid red;
-      width: 100%;
-      height: 400px;
-    }
-  }
-  section {
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    background-color: #ccc;
-  
-    animation-name: boxAnimation;
-    animation-duration: 4s;
-    animation-fill-mode: forwards; */
