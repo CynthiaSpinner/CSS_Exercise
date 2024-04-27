@@ -2,31 +2,50 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>CSS Intro</title>
-    <!-- Exercise 1: Add a link element with a href attribute that links your external css file to this document  -->
+    <link rel="stylesheet" href="index.css"/>
+    <!-- <style>
+      #background {
+        background-image: url('./images/TC_background.png');
+        background-size: 100% 130%;
+        background-position: left top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+       
+        didn't like the background photo, while the size of screen changes
+        it will stretch the logo. thinking about cropping logo and removing background 
+      }
+    </style> -->
+    
   </head>
-
-  <body>
-    <header>
+  
+  <body> <!--id="background"--> 
+    
+    <header> <!--want to make nav bar buttons-->
+      <div id="logo">
+        Cynthia Spinner
+      </div>
       <nav>
         <ul>
-          <li>
-            <a href="/">Home</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/">Home</a>
           </li>
-          <li>
-            <a href="/about">About</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/about">About</a>
           </li>
-          <li>
-            <a href="/projects">Projects</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
-
+    
     <main>
-      <section>
-        <h1>Main Heading</h1>
-        <img src="./images/example.png" alt="Author Headshot" />
+      
+      <section class="center">
+        <h1 id="title">Main Heading</h1>
+        <img id="avatar" src="./images/example.png" alt="Author Headshot" />
         <p>Author.. Bio...</p>
       </section>
       <article>
@@ -44,22 +63,23 @@
         </section>
       </article>
     </main>
-
+    
     <footer>
       <nav>
         <ul>
-          <li>
-            <a href="/privacy">Privacy Policy</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/privacy">Privacy Policy</a>
           </li>
-          <li>
-            <a href="/terms">Terms and Conditions</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/terms">Terms and Conditions</a>
           </li>
         </ul>
       </nav>
 
       <div>
         <p>Powered by 🕯️</p>
-        <p>&copy; TrueCoders 2021-24</p>
+        <p>&copy TrueCoders 2021-24</p> 
+        
       </div>
     </footer>
   </body>
